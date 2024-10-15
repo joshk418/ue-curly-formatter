@@ -1,9 +1,9 @@
 {
-  	"name": "cscurlyformatter",
-  	"displayName": "C# Curly Formatter",
-  	"description": "C# formatting fixes collection.",
+  	"name": "uecurlyformatter",
+  	"displayName": "Unreal Engine Curly Formatter",
+  	"description": "Unreal Engine formatting fixes collection with support for C++, C#, and AngelScript.",
   	"version": "0.0.7",
-  	"publisher": "Ironcutter24",
+  	"publisher": "joshk418",
   	"icon": "icon.png",
   	"engines": {
   	  	"vscode": "^1.75.0"
@@ -17,21 +17,21 @@
   	"contributes": {
   	  	"commands": [
   	  	  	{
-  	  	  	  	"command": "cscurlyformatter.curlyformat",
+  	  	  	  	"command": "uecurlyformatter.curlyformat",
   	  	  	  	"title": "Curly Format"
   	  	  	}
   	  	],
   	  	"keybindings": [
   	  	  	{
   	  	  	  	"key": "enter",
-  	  	  	  	"command": "cscurlyformatter.curlyformat",
-  	  	  	  	"when": "editorLangId == csharp && editorTextFocus"
+  	  	  	  	"command": "uecurlyformatter.curlyformat",
+  	  	  	  	"when": "(editorLangId == csharp || editorLangId == cpp || editorLangId == c || editorLangId == objective-c || editorLangId == objective-cpp || editorLangId == angelscript) && editorTextFocus"
   	  	  	}
   	  	],
   	  	"configuration": {
-  	  	  	"title": "C# Curly Formatter",
+  	  	  	"title": "Unreal Engine Curly Formatter",
   	  	  	"properties": {
-  	  	  	  	"cscurlyformatter.autoTabIndentation": {
+  	  	  	  	"uecurlyformatter.autoTabIndentation": {
   	  	  	  	  	"type": "boolean",
   	  	  	  	  	"description": "Enable automatic tab intendation style",
   	  	  	  	  	"default": true
@@ -62,11 +62,11 @@
   	},
   	"license": "SEE LICENSE IN LICENSE.md",
   	"bugs": {
-  	  	"url": "https://github.com/Ironcutter24/cs-curly-formatter/issues",
-  	  	"email": "ironcutter24@gmail.com"
+  	  	"url": "https://github.com/joshk418/ue-curly-formatter/issues",
+  	  	"email": "joshk418.jk@gmail.com"
   	},
   	"repository": {
   	  	"type": "git",
-  	  	"url": "https://github.com/Ironcutter24/cs-curly-formatter/"
+  	  	"url": "https://github.com/joshk418/ue-curly-formatter"
   	}
 }
