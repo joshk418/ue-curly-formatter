@@ -2,7 +2,7 @@
   	"name": "uecurlyformatter",
   	"displayName": "Unreal Engine Curly Formatter",
   	"description": "Unreal Engine formatting fixes collection with support for C++, C#, and AngelScript.",
-  	"version": "0.0.7",
+  	"version": "0.0.8",
   	"publisher": "joshk418",
   	"icon": "icon.png",
   	"engines": {
